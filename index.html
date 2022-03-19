@@ -48,9 +48,7 @@
     .underC {
       text-indent: -9000%;
       background-image: url('/assets/ee.webp');
-      min-width: 50vw;
       height: 100%;
-      padding-top: 44%;
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
@@ -60,6 +58,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .underC {
+        min-width: 70vw;
+        padding-top: 64%;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .underC {
+        width: 50vw;
+        padding-top: 54%;
+      }
     }
   </style>
 </head>
@@ -77,4 +89,3 @@
 </body>
 
 </html>
-
