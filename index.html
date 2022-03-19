@@ -58,6 +58,17 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+    }
+
+    .contact-item {
+      display: flex;
+      margin-bottom: 10px;
+    }
+
+    .contact-item:hover a {
+      transition: .3s color ease-in-out;
+      color: #25D366;
     }
 
     @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -81,8 +92,14 @@
     <div class="background-content">
       <div class="underC"></div>
       <div class="contact">
-        <img class="icon-wa" src="assets/icon-WA.svg">
-        <a class="heading" href="https://api.whatsapp.com/send?phone=62817116881">+62 817-116-881</a>
+        <div class="contact-item">
+          <img class="icon-wa" src="assets/icon-WA.svg">
+          <a class="heading" href="https://api.whatsapp.com/send?phone=081281116881">Customer Service 1</a>
+        </div>
+        <div class="contact-item">
+          <img class="icon-wa" src="assets/icon-WA.svg">
+          <a class="heading" href="https://api.whatsapp.com/send?phone=081808608188">Customer Service 2</a>
+        </div>
       </div>
     </div>
   </div>
